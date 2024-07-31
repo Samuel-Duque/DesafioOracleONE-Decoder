@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>AluraCypher</title>
+  </head>
+  <body>
+    <div class="corpo">
+      <div class="header">
+        <h1>AluraCypher</h1>
+        <p>
+          Bem-vindo ao AluraCypher! A ferramenta de criptografia mais segura do
+          bairro, ou quase isso. <br /><br />Aqui você pode criptografar suas
+          mensagens e enviar para amigos 🕵️🕵️‍♂️
+        </p>
+        <p
+          style="
+            font-size: 12px;
+            background-color: #1f1f1f;
+            border: 1px solid #3e3e3e;
+            padding: 5px 5px;
+            border-radius: 5px;
+            margin-top: 20px;
+          "
+        >
+          🛑Apenas letras minúsculas e sem acento
+        </p>
+      </div>
+      <div class="campoForm">
+        <div class="button__section">
+          <button class="cypher__button" id="cypher__button">
+            Criptografar
+          </button>
+          <button class="decrypt__button" id="decrypt__button">
+            Descriptografar
+          </button>
+        </div>
+
+        <div class="input__text">
+          <textarea
+            name="input__message"
+            id="input__message"
+            placeholder="Digite sua mensagem aqui"
+          ></textarea>
+        </div>
+        <div class="output__text">
+          <span style="font-size: 13px; font-weight: 600">Output:</span>
+          <div id="placehold">
+            <span style="font-size: 13px"
+              >Nenhuma mensagem encontrada. Digite um texto que você deseja
+              criptografar ou descriptografar.</span
+            >
+          </div>
+          <div class="textoDecifrado">
+            <span id="output__message"></span>
+          </div>
+        </div>
+        <button style="width: 100%" id="copy_button">COPIAR</button>
+      </div>
+    </div>
+    <canvas id="matrixCanvas"></canvas>
+    <script src="script.js"></script>
+  </body>
+  <script src="./logic/app.js"></script>
+</html>
